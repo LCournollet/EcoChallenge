@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 105 30% 97%;
+  --foreground: 220 14.3% 20%;
+  --muted: 60 4.8% 95.9%;
+  --muted-foreground: 25 5.3% 44.7%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 220 14.3% 20%;
+  --card: 0 0% 100%;
+  --card-foreground: 220 14.3% 20%;
+  --border: 20 5.9% 90%;
+  --input: 20 5.9% 90%;
+  --primary: 147 51% 36%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 47 93% 63%;
+  --secondary-foreground: 24 9.8% 10%;
+  --accent: 60 4.8% 95.9%;
+  --accent-foreground: 24 9.8% 10%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 60 9.1% 97.8%;
+  --ring: 147 51% 36%;
+  --radius: 0.5rem;
+  
+  /* Custom colors */
+  --eco-primary: #2D8B61;
+  --eco-primary-dark: #1B5E41;
+  --eco-secondary: #F9C846;
+  --eco-light: #F8FAF8;
+  --eco-dark: #333333;
+  --eco-correct: #34D399;
+  --eco-incorrect: #F87171;
+}
+
+.dark {
+  --background: 240 10% 3.9%;
+  --foreground: 0 0% 98%;
+  --muted: 240 3.7% 15.9%;
+  --muted-foreground: 240 5% 64.9%;
+  --popover: 240 10% 3.9%;
+  --popover-foreground: 0 0% 98%;
+  --card: 240 10% 3.9%;
+  --card-foreground: 0 0% 98%;
+  --border: 240 3.7% 15.9%;
+  --input: 240 3.7% 15.9%;
+  --primary: 147 51% 36%;
+  --primary-foreground: 0 0% 98%;
+  --secondary: 47 93% 63%;
+  --secondary-foreground: 240 5.9% 10%;
+  --accent: 240 3.7% 15.9%;
+  --accent-foreground: 0 0% 98%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 98%;
+  --ring: 240 4.9% 83.9%;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-eco-light text-foreground font-body;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading font-bold;
+  }
+}
+
+@layer components {
+  .timer-progress {
+    transition: width 1s linear;
+  }
+  
+  .team-color-1 { background-color: #4F46E5; }
+  .team-color-2 { background-color: #EC4899; }
+  .team-color-3 { background-color: #F59E0B; }
+  .team-color-4 { background-color: #10B981; }
+  .team-color-5 { background-color: #8B5CF6; }
+  .team-color-6 { background-color: #3B82F6; }
+  
+  .question-enter {
+    animation: slideIn 0.5s ease-out forwards;
+  }
+  
+  @keyframes slideIn {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+}
+
+.bg-eco-primary { background-color: var(--eco-primary); }
+.bg-eco-primary-dark { background-color: var(--eco-primary-dark); }
+.bg-eco-secondary { background-color: var(--eco-secondary); }
+.bg-eco-light { background-color: var(--eco-light); }
+.bg-eco-dark { background-color: var(--eco-dark); }
+.bg-eco-correct { background-color: var(--eco-correct); }
+.bg-eco-incorrect { background-color: var(--eco-incorrect); }
+
+.text-eco-primary { color: var(--eco-primary); }
+.text-eco-primary-dark { color: var(--eco-primary-dark); }
+.text-eco-secondary { color: var(--eco-secondary); }
+.text-eco-light { color: var(--eco-light); }
+.text-eco-dark { color: var(--eco-dark); }
+.text-eco-correct { color: var(--eco-correct); }
+.text-eco-incorrect { color: var(--eco-incorrect); }
+
+.border-eco-primary { border-color: var(--eco-primary); }
+.border-eco-correct { border-color: var(--eco-correct); }
+.border-eco-incorrect { border-color: var(--eco-incorrect); }
+
+.focus\:ring-eco-primary:focus { --tw-ring-color: var(--eco-primary); }
+.hover\:bg-eco-primary-dark:hover { background-color: var(--eco-primary-dark); }
+.hover\:text-eco-primary-dark:hover { color: var(--eco-primary-dark); }
+.hover\:border-eco-primary:hover { border-color: var(--eco-primary); }
+
+.font-heading { font-family: 'Montserrat', sans-serif; }
+.font-body { font-family: 'Open Sans', sans-serif; }

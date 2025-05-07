@@ -1,0 +1,39 @@
+Project Description: Multiplayer Team Quiz Platform (Kahoot-style, Environmental Theme)
+I want to build a real-time, multiplayer quiz web app inspired by Kahoot, specifically designed for companies and teams, with an environmental theme. Here’s how it should work:
+
+Predefined Questions in French:
+The quiz contains exactly 20 questions, all hard-coded in the application, written entirely in French, and focused on environmental topics (such as ecology, sustainability, and eco-friendly habits).
+
+Session Creation:
+An organizer creates a quiz session and chooses the number of teams.
+
+Joining via Shareable Link:
+Each participant joins the session using a unique link or code generated for that session, enters their name, and selects or is assigned to a team.
+
+Live, Synchronized Play:
+When the quiz starts, questions are displayed live to all teams or participants at the same time.
+
+Team Play and Scoring:
+Each team answers the questions (either collaboratively or individually, with team scores aggregated).
+
+Podium and Detailed Feedback:
+At the end, the app displays a podium with team rankings and scores. It also provides an analysis of the results, showing for each question how many teams or participants answered correctly or incorrectly, and a summary of the most common mistakes to help everyone learn.
+
+Technical requirements
+Real-time synchronization so everyone sees and answers the same question at the same time.
+
+Web-based interface (HTML/JS frontend).
+
+Backend server for managing sessions, teams, questions, answers, and scoring (Node.js + Socket.io recommended).
+
+Simple and accessible for users who may not be tech-savvy.
+
+All interface elements and content in French.
+
+All 20 questions predefined in the code, focused on environmental topics.
+
+A unique, shareable link for each session, allowing participants to join teams easily.
+
+End-of-quiz analytics: for each question, display statistics on correct/incorrect answers and highlight the most common mistakes.
+
+The goal is to create an engaging, eco-friendly quiz experience for companies, promoting teamwork and learning, similar to platforms like Kahoot or Ma Petite Planète, but fully in French with predefined environmental questions, easy access via a shared link, and detailed analysis of quiz results.
