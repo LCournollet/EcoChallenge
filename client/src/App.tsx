@@ -12,7 +12,7 @@ import AnswerResults from "@/pages/AnswerResults";
 import FinalResults from "@/pages/FinalResults";
 import PlayerJoin from "@/pages/PlayerJoin";
 import GameScreen from "@/pages/GameScreen";
-import EcoFunFacts from "@/pages/EcoFunfacts";
+import EcoFunFacts from "@/pages/EcoFunFacts";
 
 function Router() {
   return (
